@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Medio Digital</title>
+</head>
+<body>
+    <h1>Registro de Medio Digital</h1>
+    <form action="Funciones/procesar_digital.php" method="POST">
+        <label>Título:</label><br>
+        <input type="text" name="titulo" required><br>
+
+        <label>Autor:</label><br>
+        <input type="text" name="autor" required><br>
+
+        <label>Fecha de Registro:</label><br>
+        <input type="date" name="fecha_registro" required><br>
+
+        <label>Cantidad:</label><br>
+        <input type="number" name="cantidad" min="1" required><br>
+
+        <label>Género:</label><br>
+        <input type="text" name="genero" required><br><br>
+
+        <input type="submit" value="Registrar Medio Digital">
+    </form>
+</body>
+</html>

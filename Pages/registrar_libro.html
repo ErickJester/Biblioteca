@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Libro</title>
+</head>
+<body>
+    <h1>Registro de Libro</h1>
+    <form action="Funciones/procesar_libro.php" method="POST">
+        <label>Título:</label><br>
+        <input type="text" name="titulo" required><br>
+
+        <label>Autor:</label><br>
+        <input type="text" name="autor" required><br>
+
+        <label>Fecha de Registro:</label><br>
+        <input type="date" name="fecha_registro" required><br>
+
+        <label>Cantidad:</label><br>
+        <input type="number" name="cantidad" min="1" required><br>
+
+        <label>Género:</label><br>
+        <input type="text" name="genero" required><br>
+
+        <label>Editorial:</label><br>
+        <input type="text" name="editorial" required><br>
+
+        <label>Edición:</label><br>
+        <input type="text" name="edicion" required><br>
+
+        <label>Calificación:</label><br>
+        <input type="number" name="calificacion" min="0" max="10"><br><br>
+
+        <input type="submit" value="Registrar Libro">
+    </form>
+</body>
+</html>
